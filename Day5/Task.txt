@@ -1,0 +1,16 @@
+1. create (1. Enter Your Name, 2.Enter your age, 3.Enter your Desig.(progm=25k/Manager=30k/Tester=20k)
+save in h2 database.
+Yes/No
+Yes-> (name,age,Desig)
+No-> 1.create 2.display 3.raise salary 4.exit
+
+-----------------------------------
+2. display
+name| Age |design| salary|
+
+-------------------------------------
+
+3. Raise Salary
+
+
+4. exit
