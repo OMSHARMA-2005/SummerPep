@@ -1,4 +1,4 @@
-# Summer PEP
+﻿# Summer PEP
 
 Day-wise progress for the Summer PEP program.
 
@@ -13,3 +13,9 @@ Day-wise progress for the Summer PEP program.
 | 5 | [Day5](Day5/) | Microservices (Eureka, cart, payment, async product client/service) |
 
 More days will be added here as the program continues.
+
+## Project
+
+| Folder | Summary |
+|--------|---------|
+| [Project](Project/) | Console-based employee management (Spring Boot, JPA/H2) — see [consoleBased Management System](Project/consoleBased%20Management%20System/) |
