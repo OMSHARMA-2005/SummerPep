@@ -12,6 +12,7 @@ Day-wise progress for the Summer PEP program.
 | 4 | [Day4](Day4/) | Spring projects, product client/service, Swagger with DB |
 | 5 | [Day5](Day5/) | Microservices (Eureka, cart, payment, async product client/service) |
 | 6 | [Day6](Day6/) | (vacant) |
+| 7 | [Day7](Day7/) | (vacant) |
 
 More days will be added here as the program continues.
 
