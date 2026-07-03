@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Create Employee</title>
+
+<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+<h2>Create Employee</h2>
+
+<form th:action="@{/save}" th:object="${employee}" method="post">
+
+<label>Name</label>
+
+<br>
+
+<input type="text" th:field="*{name}">
+
+<p style="color:red"
+th:if="${#fields.hasErrors('name')}"
+th:errors="*{name}"></p>
+
+<br>
+
+<label>Age</label>
+
+<br>
+
+<input type="number" th:field="*{age}">
+
+<p style="color:red"
+th:if="${#fields.hasErrors('age')}"
+th:errors="*{age}"></p>
+
+<br>
+
+<label>Designation</label>
+
+<br>
+
+<select th:field="*{designation}">
+
+<option value="Programmer">Programmer</option>
+
+<option value="Tester">Tester</option>
+
+<option value="Manager">Manager</option>
+
+</select>
+
+<br><br>
+
+<input type="submit" value="Save">
+
+</form>
+
+</body>
+
+</html>

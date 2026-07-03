@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Saved</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Employee Saved Successfully</h1>
+
+    <h3>Do you want to add another employee?</h3>
+
+    <a th:href="@{/createPage}">
+        <button>Yes</button>
+    </a>
+
+    <a th:href="@{/home}">
+        <button>No</button>
+    </a>
+
+</div>
+
+</body>
+
+</html>

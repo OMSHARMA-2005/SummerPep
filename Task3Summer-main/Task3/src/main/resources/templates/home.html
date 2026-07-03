@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Employee Management System</h1>
+
+    <h2>
+        Welcome,
+        <span th:text="${username}"></span>
+    </h2>
+
+    <br>
+
+    <a th:href="@{/createPage}">
+        <button>Create Employee</button>
+    </a>
+
+    <br><br>
+
+    <a th:href="@{/displayPage}">
+        <button>Display Employees</button>
+    </a>
+
+    <br><br>
+
+    <a th:href="@{/raisePage}">
+        <button>Raise Salary</button>
+    </a>
+
+    <br><br>
+
+    <a th:href="@{/exit}">
+        <button>Exit</button>
+    </a>
+
+    <br><br>
+
+    <a th:href="@{/logout}">
+        <button>Logout</button>
+    </a>
+
+</div>
+
+</body>
+
+</html>
