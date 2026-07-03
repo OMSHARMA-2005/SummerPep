@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Login</title>
+
+<link rel="stylesheet" th:href="@{/style.css}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Employee Management System</h1>
+
+<h2>Login</h2>
+
+<form th:action="@{/login}" method="post">
+
+<label>Username</label>
+
+<br>
+
+<input type="text" name="username" required>
+
+<br><br>
+
+<label>Password</label>
+
+<br>
+
+<input type="password" name="password" required>
+
+<br><br>
+
+<input type="submit" value="Login">
+
+</form>
+
+<br>
+
+<a th:href="@{/register}">
+<button>Register</button>
+</a>
+
+</div>
+
+</body>
+
+</html>

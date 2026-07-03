@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Error</title>
+
+<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+<h2 th:text="${message}" style="color:red"></h2>
+
+<br>
+
+<a href="/">
+<button>Back to Login</button>
+</a>
+
+</body>
+
+</html>
