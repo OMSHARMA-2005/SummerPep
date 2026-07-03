@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Updated</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Salary Updated Successfully</h1>
+
+    <h2>Updated Employee Details</h2>
+
+    <p><b>ID :</b> <span th:text="${employee.id}"></span></p>
+
+    <p><b>Name :</b> <span th:text="${employee.name}"></span></p>
+
+    <p><b>Age :</b> <span th:text="${employee.age}"></span></p>
+
+    <p><b>Designation :</b> <span th:text="${employee.designation}"></span></p>
+
+    <p><b>Salary :</b> <span th:text="${employee.salary}"></span></p>
+
+    <br>
+
+    <a th:href="@{/raisePage}">
+        <button>Yes</button>
+    </a>
+
+    <a th:href="@{/home}">
+        <button>No</button>
+    </a>
+
+</div>
+
+</body>
+
+</html>

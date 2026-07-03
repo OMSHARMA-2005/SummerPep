@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exit</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Thank You So Much</h1>
+
+    <h2>For Using Employee Management System</h2>
+
+    <br>
+
+    <a th:href="@{/}">
+        <button>Login Again</button>
+    </a>
+
+</div>
+
+</body>
+
+</html>
