@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>School Portal</title>
+    <style>
+        .logo {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            width: 80px;
+            height: 60px;
+            z-index: 999;
+        }
+
+        .side-image {
+            position: fixed;
+            top: 140px;
+            right: 20px;
+            width: 80px;
+            height: 80%;
+            z-index: 999;
+            object-fit: cover;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        /* 
+            WHY this position?
+            image width (80) + right offset (20) + gap (10) = 110px from right
+            This places the line exactly at the edge of your right panel
+        */
+        .vertical-divider {
+            position: fixed;
+            top: 0;
+            right: 110px;
+            height: 100vh;        /* Full page height */
+            border-left: 2px solid #ccc;
+            z-index: 998;         /* Just below images so they overlap cleanly */
+        }
+    </style>
+</head>
+<body>
+    <h2>School Portal</h2>
+
+    <img class="logo"
+         src="https://i.pinimg.com/1200x/0d/b8/ba/0db8ba1f4bf758f643e4358aa3da3bda.jpg"
+         alt="School Logo">
+
+    <img class="side-image"
+         src="https://i.pinimg.com/1200x/0d/b8/ba/0db8ba1f4bf758f643e4358aa3da3bda.jpg"
+         alt="Side Image">
+
+    <!-- Vertical line between content and right panel -->
+    <div class="vertical-divider"></div>
+
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/student">Student</a>
+
+    <hr>
+    <center>
+        <h3 th:text="${title}"></h3>
+        <p th:text="${message}"></p>
+
+        <div th:if="${title != 'About' and title != 'Contact' and title != 'Home'}">
+            <p>Name: <span th:text="${Name}"></span></p>
+            <p>Course: <span th:text="${Course}"></span></p>
+            <p>Semester: <span th:text="${Semester}"></span></p>
+            <p>College: <span th:text="${College}"></span></p>
+        </div>
+    </center>
+
+</body>
+</html>
